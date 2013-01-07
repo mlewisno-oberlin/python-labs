@@ -1,5 +1,5 @@
 # sum.py
-# Computes the sum of the first 4 positive integers
+# Asks the user how many cpnsecutive integers to add up and then computes and prints the sum
 # 
 
 def main():

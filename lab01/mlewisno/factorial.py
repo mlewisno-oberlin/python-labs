@@ -1,12 +1,12 @@
 # factorial.py
-# Computes the sum of the first 4 positive integers
+# Prompts the user to say what factorial they'd like computed and then computes and prints it.
 # 
 
 def main():
     limit = eval(input("What factorial do you want me to compute? "))
-    sum = 1
+    product = 1
     for i in range(1,limit+1):
-        sum = sum*i
-    print(limit, "factorial is", sum)
+        product = product*i
+    print(limit, "factorial is", product)
 
 main()
