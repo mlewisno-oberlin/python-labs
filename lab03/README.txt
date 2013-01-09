@@ -1,4 +1,4 @@
-Lab03 and lab05 both requires the use of a picture class. So make sure 
+Lab03 requires the use of a picture class. So make sure 
 
 you get the picture.py file in this folder before starting the lab.
 
