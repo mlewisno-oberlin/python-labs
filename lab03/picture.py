@@ -232,7 +232,7 @@ class Picture():
     # @param w The width of the rectangle
     # @param h The height of the rectangle.
     def drawRectFill(self, x, y, w, h):
-        self.draw.polygon(((x, y), (x+w, y+h)), fill=self.pen_color)
+        self.draw.rectangle(((x, y), (x+w, y+h)), fill=self.pen_color)
 
     ##
     # Draw the outline of a rectangle
@@ -241,7 +241,7 @@ class Picture():
     # @param w The width of the rectangle
     # @param h The height of the rectangle.
     def drawRect(self, x, y, w, h):
-        self.draw.polygon(((x, y), (x+w, y+h)), outline=self.pen_color)
+        self.draw.rectangle(((x, y), (x+w, y+h)), outline=self.pen_color)
     
     ##
     # Draw a string (words!)
