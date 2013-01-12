@@ -16,11 +16,13 @@ shoot me an email to szheng@oberlin.edu.
 
 Also, to use picture.py you need to install PIL(Python Image Library) first.
 
-For platforms other than Windows, you can pull PIL from 
+For platforms other than Windows, you can download PIL from 
 
 https://github.com/peter-fogg/pil-py3k/tree/master/PIL 
 
-If you are using Windows, a simpler way to install PIL will be to download from 
+In the command line, go into your PIL folder, and then do "python setup.py install".
+
+If you are using Windows, a simpler way to install PIL will be to use the .exe file from 
 
 http://www.lfd.uci.edu/~gohlke/pythonlibs/#pil
 
