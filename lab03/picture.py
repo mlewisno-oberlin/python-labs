@@ -150,6 +150,14 @@ class Picture():
         self.pen_color = (r, g, b)
     
     ##
+    # Change the coordinates of the pen.
+    # @param x The new x-coordinate.
+    # @param y The new y-coordinate.
+    def setPosition(self, x, y):
+        self.setPenX(x)
+        self.setPenY(y)
+    
+    ##
     # Change the x-coordinate of the pen.
     # @param x The new x-coordinate.
     def setPenX(self, x):
@@ -185,10 +193,10 @@ class Picture():
     # Draw forward by a given amount.
     # @param distance The number of pixels to draw forward.
     def drawForward(self, distance):
-        endX = self.pen_rotation[0] + math.cos(radian)*distance
-        endY = self.pen_rotation[1] + math.sin(radian)*distance
+        endX = self.pen_position[0] + math.cos(self.pen_rotation)*distance
+        endY = self.pen_position[1] + math.sin(self.pen_rotation)*distance
         end = (endX, endY)
-        self.draw.line(self.pen_position, end, fill=self.pen_color)
+        self.draw.line((self.pen_position, end), fill=self.pen_color)
         self.pen_position = end
 
     ##
