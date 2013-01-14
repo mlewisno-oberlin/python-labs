@@ -1,18 +1,30 @@
-Lab03 requires the use of a picture class. So make sure you get the picture.py file in this folder before starting the lab.
+Lab03 requires the use of a picture class. 
 
-You need to put picture.py in the same folder with your lab files, and do "from picture import Picture" where you need it.
+Make sure you get the picture.py file in this folder before starting the lab.
 
-The current picture class might not be perfect and require changes later, so if you have any suggestions for improvement or want to report a bug, shoot me an email to szheng@oberlin.edu.
+You need to put picture.py in the same folder with your lab files, 
+
+and do "from picture import Picture" where you need it.
+
+The current picture class might not be perfect and require changes later, 
+
+so if you have any suggestions for improvement or want to report a bug, 
+
+shoot me an email to szheng@oberlin.edu.
 
 
 
 Also, to use picture.py you need to install PIL(Python Image Library) first.
 
-For platforms other than Windows, you can download PIL from https://github.com/peter-fogg/pil-py3k/tree/master/PIL 
+For platforms other than Windows, you can download PIL from 
+
+https://github.com/peter-fogg/pil-py3k/tree/master/PIL 
 
 In the command line, go into your PIL folder, and then do "python setup.py install".
 
-If you are using Windows, a simpler way to install PIL will be to use the .exe file from http://www.lfd.uci.edu/~gohlke/pythonlibs/#pil
+If you are using Windows, a simpler way to install PIL will be to use the .exe file from 
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#pil
 
 If you have problems installing PIL, feel free to email me at szheng@oberlin.edu.
 
@@ -21,7 +33,9 @@ FAQ:
 
 1. Q: Why do I get the error “global name Picture is not defined”?
    
-   A: It is probably because you haven’t put the picture.py in the same folder with your program, or haven't import Picture. At the top of your program, write "from picture import Picture". 
+   A: It is probably because you haven’t put the picture.py in the same folder with your program, 
+
+      or haven't import Picture. At the top of your program, write "from picture import Picture". 
 
 2. Q: Why can't I get any image displayed?
 
@@ -41,9 +55,13 @@ FAQ:
 
 6. Q: On Mac, when I try to install PIL, I get a bunch of errors...
 
-   A: Maybe your computer does not have the compiler necessary for installing libraries to Python. Installing xcode before installing PIL should solve the problem. The link to xcode is http://www.tech-recipes.com/rx/726/mac-os-x-install-gcc-compiler/ .
+   A: Maybe your computer does not have the compiler necessary for installing libraries to Python. 
 
-7. Q: I get errors when constructing the picture object from given height and width?
+      Installing xcode before installing PIL should solve the problem. The link to xcode is 
+
+      http://www.tech-recipes.com/rx/726/mac-os-x-install-gcc-compiler/ 
+
+7. Q: I get errors when constructing the picture object from given height and width.
 
    A: Do Picture((width, height)) instead of Picture(width, height).
 
