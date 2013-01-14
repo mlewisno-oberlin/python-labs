@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" kpf_version="5" name="Lab02.komodoproject">
+<file id="0973ab5e-c82f-40d5-91a8-dde581f52705" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="sequence.py" url="sequence.py">
+</file>
+<file id="0a5aaa46-dbdc-43ee-a194-da974fc4163c" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="beer.py" url="beer.py">
+</file>
+<file id="21a41e22-130c-4006-8327-5d8e87280b45" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="patternN.py" url="patternN.py">
+</file>
+<file id="29392497-e51b-4260-bd75-1af0f1877e20" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="patternC.py" url="patternC.py">
+</file>
+<file id="6c81f40d-3625-4450-b958-ece1d823df66" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="patternD.py" url="patternD.py">
+</file>
+<file id="71c70897-aa3e-44ae-9525-8d4d22f579fd" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="fibonacci.py" url="fibonacci.py">
+</file>
+<file id="8dbf79d1-be44-4290-96b9-b23376ab3d93" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="patternA.py" url="patternA.py">
+</file>
+<file id="d25e68a3-14a4-41d9-840d-5d38f04573db" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="interest.py" url="interest.py">
+</file>
+<file id="d44376be-d0cc-4913-abad-290041689da8" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="patternB.py" url="patternB.py">
+</file>
+<file id="eecfcfa9-05eb-42e0-8635-c5fa7e332586" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="test.py" url="test.py">
+</file>
+<file id="f2fd6d52-0cc2-4688-83b7-e90d3819f37d" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="monte.py" url="monte.py">
+</file>
+<file id="fbb410ed-4cfb-4fa4-8175-8fed7ff26663" idref="776917fc-55dd-46f1-9e1f-c4d0ab6331f7" name="patternE.py" url="patternE.py">
+</file>
+</project>
