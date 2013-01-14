@@ -22,7 +22,7 @@ class Picture():
         # Default values for pen
         self.pen_color = (0, 0, 0)
         self.pen_position = (0, 0)
-        #self.pen_width = 1.0
+        self.pen_width = 1
         self.pen_rotation = 0
         # Pixel data of the image
         self.pixel = self.image.load()
@@ -170,6 +170,17 @@ class Picture():
         self.pen_position = (self.pen_position[0], y)
     
     ##
+    # Get the width of the pen.
+    def getPenWidth(self):
+        return self.pen_width
+        
+    ##
+    # Set the width of the pen.
+    # @param width The new width of the pen.
+    def setPenWidth(self, width):
+        self.pen_width = width
+    
+    ##
     # Rotate the pen.
     # @param theta Amount to rotate the pen by.
     def rotate(self, theta):
@@ -197,8 +208,17 @@ class Picture():
         endX = self.pen_position[0] + math.cos(radian)*distance
         endY = self.pen_position[1] + math.sin(radian)*distance
         end = (endX, endY)
-        self.draw.line((self.pen_position, end), fill=self.pen_color)
+        self.draw.line((self.pen_position, end), fill=self.pen_color, width = self.pen_width)
         self.pen_position = end
+
+    ##
+    # Draw a line segment from the given start to end
+    # @param startX The x-coordinate of the start
+    # @param startY The y-coordinate of the start
+    # @param endX The x-coordinate of the end
+    # @param endY The y-coordinate of the end
+    def drawLine(self, startX, startY, endX, endY):
+        self.draw.line(((startX, startY),(endX, endY)), fill=self.pen_color, width = self.pen_width)
 
     ##
     # Draw the outline of a circle.
@@ -206,9 +226,16 @@ class Picture():
     # @param y The y-coordinate of the center of the circle.
     # @param radius The radius of the circle.
     def drawCircle(self, x, y, radius):
-        self.draw.ellipse((x-radius/2, y-radius/2,
-                           x+radius/2, y+radius/2),
-                          outline=self.pen_color)
+        if (self.pen_width == 1):
+            self.draw.ellipse((x-radius/2, y-radius/2,
+                               x+radius/2, y+radius/2),
+                              outline=self.pen_color)
+        elif (self.pen_width < radius):
+            for r in range(0, self.pen_width):
+                tempRadius=radius-r
+                self.draw.ellipse((x-tempRadius/2, y-tempRadius/2, x+tempRadius/2, y+tempRadius/2), outline=self.pen_color)
+        else:
+            self.drawCircleFill(x, y, radius)
 
     ##
     # Draw a circle.
@@ -232,7 +259,13 @@ class Picture():
     # @param xs A list of the x-coordinates
     # @param ys A list of the y-coordinates.
     def drawPoly(self, xs, ys):
-        self.draw.polygon(list(zip(xs, ys)), outline=self.pen_color)
+        if (self.pen_width == 1):
+            self.draw.polygon(list(zip(xs, ys)), outline=self.pen_color)
+        else:
+            numVertices = len(list(xs))
+            for x in range(0, numVertices-1):
+                self.drawLine(xs[x], ys[x],xs[x+1], ys[x+1])
+            self.drawLine(xs[numVertices-1], ys[numVertices-1], xs[0], ys[0])
     
     ##
     # Draw a (filled in) rectangle
@@ -250,7 +283,13 @@ class Picture():
     # @param w The width of the rectangle
     # @param h The height of the rectangle.
     def drawRect(self, x, y, w, h):
-        self.draw.rectangle(((x, y), (x+w, y+h)), outline=self.pen_color)
+        if (self.pen_width == 1):
+            self.draw.rectangle(((x, y), (x+w, y+h)), outline=self.pen_color)
+        elif (int((self.pen_width+1)/2)>=w or int((self.pen_width+1)/2)>=h):
+            self.drawRectFill(x, y, w, h)
+        else:
+            for r in range(0, int((self.pen_width+1)/2)):
+                self.draw.rectangle(((x+r, y+r), (x-r+w, y-r+h)), outline=self.pen_color)
     
     ##
     # Draw a string (words!)
