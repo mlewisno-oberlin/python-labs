@@ -178,7 +178,7 @@ class Picture():
     
     ##
     # Set the direction of the pen.
-    # @param theta The new direction of the pen.
+    # @param theta The new direction of the pen, which is the 
     def setDirection(self, theta):
         self.pen_rotation = theta
         self.pen_rotation %= 360
@@ -193,8 +193,9 @@ class Picture():
     # Draw forward by a given amount.
     # @param distance The number of pixels to draw forward.
     def drawForward(self, distance):
-        endX = self.pen_position[0] + math.cos(self.pen_rotation)*distance
-        endY = self.pen_position[1] + math.sin(self.pen_rotation)*distance
+        radian = math.radians(self.pen_rotation)
+        endX = self.pen_position[0] + math.cos(radian)*distance
+        endY = self.pen_position[1] + math.sin(radian)*distance
         end = (endX, endY)
         self.draw.line((self.pen_position, end), fill=self.pen_color)
         self.pen_position = end
@@ -224,14 +225,14 @@ class Picture():
     # @param xs A list of the x-coordinates?
     # @param ys A list of the y-coordinates?
     def fillPoly(self, xs, ys):
-        self.draw.polygon(zip(xs, ys), fill=self.pen_color)
+        self.draw.polygon(list(zip(xs, ys)), fill=self.pen_color)
         
     ##
     # Draw the outline of a polygon.
     # @param xs A list of the x-coordinates
     # @param ys A list of the y-coordinates.
     def drawPoly(self, xs, ys):
-        self.draw.polygon(zip(xs, ys), outline=self.pen_color)
+        self.draw.polygon(list(zip(xs, ys)), outline=self.pen_color)
     
     ##
     # Draw a (filled in) rectangle
@@ -257,7 +258,7 @@ class Picture():
     # @param y The y-coordinate of the (upper left hand?) corner of the string.
     # @param string The string to be written to the picture.
     def drawString(self, x, y, string):
-        self.draw((x, y), string, fill=self.pen_color)
+        self.draw.text((x, y), string, fill=self.pen_color)
 
     ##
     # Save the file.
