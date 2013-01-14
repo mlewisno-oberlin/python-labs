@@ -91,7 +91,7 @@ class Picture():
     # @param y The y coordinate of the pixel.
     # @return Integer value containing the blue at given pixel.
     def getPixelBlue(self, x, y):
-        return self.pixel[x, y][1]
+        return self.pixel[x, y][2]
     
     ##
     # Get the green value of pixel at given coordinates.
@@ -99,7 +99,7 @@ class Picture():
     # @param y The y coordinate of the pixel.
     # @return Integer value containing the green at given pixel.
     def getPixelGreen(self, x, y):
-        return self.pixel[x, y][2]
+        return self.pixel[x, y][1]
     
     ##
     # Set pixel to a given color.
