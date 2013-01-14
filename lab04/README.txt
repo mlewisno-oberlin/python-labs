@@ -63,5 +63,5 @@ FAQ:
 
 7. Q: I get errors when constructing the picture object from given height and width.
 
-   A: Do Picture((width, height)) instead of Picture(width, height).
+   A: Do Picture((width, height)) instead of Picture(width, height), which the old lab 3 used to do.
 
