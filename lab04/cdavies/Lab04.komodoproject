@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="a9ac27f0-1c77-4de8-9fbd-67d2498e801c" kpf_version="5" name="Lab04.komodoproject">
+<file id="0054f31a-78d9-491e-b75a-5ebf04380d9f" idref="a9ac27f0-1c77-4de8-9fbd-67d2498e801c" name="imageedit.py" url="imageedit.py">
+</file>
+<file id="337306c7-706e-4e6d-9f4b-faf5b0f89131" idref="a9ac27f0-1c77-4de8-9fbd-67d2498e801c" name="monte.py" url="monte.py">
+</file>
+<file id="d465c046-f395-458e-bb2d-6e26148fe295" idref="a9ac27f0-1c77-4de8-9fbd-67d2498e801c" name="sketchy.py" url="sketchy.py">
+</file>
+<file id="e04721b0-3eeb-4303-92b1-210f92dac002" idref="a9ac27f0-1c77-4de8-9fbd-67d2498e801c" name="pyramid.py" url="pyramid.py">
+</file>
+<file id="e9b81943-cd7b-4090-8d31-3c8e26119612" idref="a9ac27f0-1c77-4de8-9fbd-67d2498e801c" name="picture.py" url="picture.py">
+</file>
+</project>
