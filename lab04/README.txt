@@ -1,4 +1,4 @@
-Lab03 requires the use of a picture class. Make sure you get 
+Lab04 requires the use of a picture class. Make sure you get 
 
 the picture.py file in this folder before starting the lab.
 
@@ -55,21 +55,7 @@ FAQ:
 
    A: If it doesn’t display any image, try running from 
 
-      IDLE instead of from the command prompt. If that 
-
-      works, it means both your code and the picture.py
-
-      is good, except that you may want to add a line
-
-      to the end of your main method:
-
-      input("Press enter to end the program.")
-
-      Before the user presses enter, the program won't
-
-      exit, so you will be able to see the image when
-
-      running from the command line.
+      IDLE instead of from the command prompt. 
 
 3. Q: I'm using Windows and when I try to install PIL, 
 
@@ -126,4 +112,3 @@ FAQ:
       instead of 
 
       Picture(width, height).
-

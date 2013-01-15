@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="ab378eaa-11bf-4c27-9583-327cf595cb1c" kpf_version="5" name="Lab03.komodoproject">
+<file id="85563169-a85e-4c3c-b669-5b9df767fdfc" idref="ab378eaa-11bf-4c27-9583-327cf595cb1c" name="testing.py" url="testing.py">
+</file>
+<file id="a76041e0-f46b-42ae-9950-b382766d9cdb" idref="ab378eaa-11bf-4c27-9583-327cf595cb1c" name="master.py" url="master.py">
+</file>
+<file id="c97100fd-4673-45d6-9055-b355bfda9e29" idref="ab378eaa-11bf-4c27-9583-327cf595cb1c" name="pyramid.py" url="pyramid.py">
+</file>
+<file id="ec512a53-3aa0-449b-84dc-b4b20af14166" idref="ab378eaa-11bf-4c27-9583-327cf595cb1c" name="primes.py" url="primes.py">
+</file>
+<file id="fc682269-8da8-49a7-ac77-94a8586014ce" idref="ab378eaa-11bf-4c27-9583-327cf595cb1c" name="picture.py" url="picture.py">
+</file>
+</project>
