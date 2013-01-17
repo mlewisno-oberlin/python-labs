@@ -49,7 +49,7 @@ def main():
     
     if(numWhite < 4):
         print("YOU FAILED!!! AHAHAHAHAHAHAHAHA, the code was", code, "!!!!!")
-# Generate a 4 letter code for the Masterming game. Returns the code as a string.
+# Generate a 4 letter code for the Mastermind game. Returns the code as a string.
 def generateCode() :
     code = ""
     for i in range(1, 5):
