@@ -60,7 +60,7 @@ def drawLine(canvas):
     startX = randCoord(WIDTH)
     startY = randCoord(HEIGHT)
     endX = randCoord(WIDTH)
-    endY = rnadCoord(HEIGHT)
+    endY = randCoord(HEIGHT)
     canvas.drawLine(startX, startY, endX, endY)
     
 # Draws the outline of a circle with a random radius and coordinates
@@ -131,7 +131,7 @@ def chooseColor(canvas):
    
 # Picks and sets the pen to a random pen width    
 def chooseThickness(canvas):
-    randThick = random.randrange(17)
+    randThick = random.randrange(15, 45)
     canvas.setPenWidth(randThick)
     
 # Pick a random coordinate in the range    
