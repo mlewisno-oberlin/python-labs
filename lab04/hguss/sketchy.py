@@ -17,15 +17,14 @@ def main():
         drawBuilding(pic)
     for i in range(0, 24):
         drawSun(pic, i)
-        pic.display()
-
     pic.writeFile("guss.bmp")
     input()
     
 def drawSun(pic, timeOfDay):
     pic.setPenColor(255, 255, 0)
     pic.drawCircleFill(timeOfDay * 40, (timeOfDay - 12) ** 2 + 100, 100)
-    timeWaster(100000000)
+    timeWaster(100)
+    pic.display()
     pic.setPenColor(128, 80, 255)
     pic.drawCircleFill(timeOfDay * 40, (timeOfDay - 12) ** 2 + 100, 100)
 
