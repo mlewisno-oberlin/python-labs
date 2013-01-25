@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="be96ac5e-c3db-4c3b-abee-5ddbdfc00e56" kpf_version="5" name="Lab06.komodoproject">
+<file id="08bf5b84-2ec9-4933-a36a-e160e119c6a0" idref="be96ac5e-c3db-4c3b-abee-5ddbdfc00e56" name="RecStr.py" url="RecStr.py">
+</file>
+<file id="20bea3dd-d287-406d-95ce-3d0edc06ba8e" idref="be96ac5e-c3db-4c3b-abee-5ddbdfc00e56" name="picture.py" url="picture.py">
+</file>
+<file id="616e96fd-57ba-404f-8450-336c88d16d45" idref="be96ac5e-c3db-4c3b-abee-5ddbdfc00e56" name="RecNum.py" url="RecNum.py">
+</file>
+<file id="791c058e-05b5-4a6e-924e-562b673637fd" idref="be96ac5e-c3db-4c3b-abee-5ddbdfc00e56" name="RecPic.py" url="RecPic.py">
+</file>
+</project>
