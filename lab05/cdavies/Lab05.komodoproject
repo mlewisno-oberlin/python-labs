@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="30bf02f9-47af-4886-804a-153a0d75c143" kpf_version="5" name="Lab05.komodoproject">
+<file id="30fe094b-63ba-4064-b35e-08f75e285717" idref="30bf02f9-47af-4886-804a-153a0d75c143" name="match.py" url="match.py">
+</file>
+<file id="6e40ccc2-3f74-4e7a-b2c8-a9d1fa3e8616" idref="30bf02f9-47af-4886-804a-153a0d75c143" name="picture.py" url="picture.py">
+</file>
+<file id="f449875d-86c3-4b7e-b6fd-002dd8df6376" idref="30bf02f9-47af-4886-804a-153a0d75c143" name="life.py" url="life.py">
+</file>
+</project>
