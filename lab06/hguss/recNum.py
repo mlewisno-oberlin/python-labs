@@ -30,33 +30,41 @@ def main():
 #Returns x to the power of y
 def power(x, y):
     try:
+        #Base case where the power is 1
         if y == 0:
             return 1
     #Entered at least one string
     except TypeError:
         print("Do not enter values as strings.")
         return
+    #x to the power of y is equivalant to x times x to the power of y - 1
     return x * power(x, y - 1)
 
 #Returns the sum of n squares
 def sumSquares(n):
     try:
+        #Base case where no squares are summed
         if n == 0:
             return 0
     #Entered at least one decimal
     except RuntimeError:
         print("This program does not accept decimals, floats, doubles.")
         return
+    #The sum of the first n squares is equivalant to n times the sum of the previous squares
     return n * n + sumSquares(n - 1)
 
 #Returns n choose k
 def choose(n, k):
+    #If the number of objects is less than the number required
     if k > n:
         return 0
+    #If the number of objects is equal to the number required
     if k == n:
         return 1
+    #If the number required is 0
     if k == 0:
         return 1
+    #Complicated discrete mathematics stuff
     return choose(n - 1, k) + choose(n - 1, k - 1)
 
 main()
