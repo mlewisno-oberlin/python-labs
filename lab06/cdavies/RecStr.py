@@ -46,7 +46,8 @@ def pal(s):
 #@return Returns True if t is a subsequence of s.
 def subseq(s, t):
     if len(t)>len(s): return False
-    if t==s[0:len(t)]: return True
+    if len(t)==0: return True
+    if t[0]==s[0]: return subseq(s[1:len(s)],t[1:len(t)])
     return subseq(s[1:len(s)],t)
 
 main()
